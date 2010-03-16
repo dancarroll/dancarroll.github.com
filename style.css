@@ -1,0 +1,67 @@
+/**
+ * 100% height layout with header and footer
+ * ----------------------------------------------
+ * Feel free to copy/use/change/improve
+ */
+
+html,body {
+	margin:0;
+	padding:0;
+	height:100%; /* needed for container min-height */
+	background: #8C4119;
+	font-family:arial,sans-serif;
+	color: #121C26;
+}
+
+div#container {
+	position:relative; /* needed for footer positioning*/
+	margin:0 auto; /* center, not in IE5 */
+	width:100%;
+	height:auto !important; /* real browsers */
+	height:100%; /* IE6: treaded as min-height*/
+	min-height:100%; /* real browsers */
+    	text-align: center;
+}
+
+div#header {
+    background:#121C26;
+    color: #8C4119;
+    width: 100%;
+    position: absolute;
+    bottom: 50%;
+    top: 0%;
+}
+
+div#header h1 {
+    background: url(header.png) no-repeat;
+    position: absolute;
+    height: 40px;
+    width: 250px;
+    text-align:left;
+    margin: 0 auto;
+    top: 100%;
+    left: 10%;
+    margin-top: -40px;
+}
+
+div#header span {
+    display: none;
+}
+
+div#footer {
+	position:absolute;
+	width:100%;
+    	top: 50%;
+	bottom:0; /* stick to bottom */
+    	background: #8C4119;
+}
+
+div#footer p {
+    font-size: 150%;
+    margin:0;
+    position: absolute;
+    left: 10%;
+}
+div#footer p a {
+    color: #121C26;
+}
